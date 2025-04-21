@@ -1,5 +1,4 @@
 
-
 {
   "name": "BWM-XMD-QUANTUM",
   "description": "Best WhatsApp bot developed by Ibrahim Adams",
@@ -14,14 +13,9 @@
       "value": ".",
       "required": true
     },
-    "AUTO_REACT": {
-      "description": "Enter yes for your bot to auto react",
-      "value": "no",
-      "required": false
-    },
-    "ANTICALL": {
+    "AUTO_REJECT_CALL": {
       "description": "Enter yes for your bot to auto reject calls",
-      "value": "no", 
+      "value": "no",
       "required": false
     },
     "AUTO_BIO": {
@@ -60,24 +54,34 @@
       "required": false
     },
     "HEROKU_API_KEY": {
-      "description": "Your Heroku API key (optional)",
+      "description": "Enter your Heroku API key to be able to control your vars",
       "value": "",
       "required": true 
     },
     "HEROKU_APP_NAME": {
-      "description": "Your Heroku app name (optional)",
+      "description": "Enter your Heroku app name to be able to control vars",
       "value": "",
       "required": true 
     },
     "OWNER_NUMBER": {
       "description": "Enter your number eg, 2547xxxxxxx",
-      "value": "254xxxxxxxxx",
+      "value": "",
       "required": true 
     },
    "STATUS_REACT_EMOJIS": {
       "description": "Enter your auto like status emojis",
-      "value": "🚀,🌎",
-      "required": true 
+      "value": "💚,🚀,🌎,✅",
+      "required": false 
+    },
+    "AUTO_REACT": {
+      "description": "Enter your auto react messages",
+      "value": "no",
+      "required": false 
+    },
+   "AUTO_REACT_STATUS": {
+      "description": "Enter yes for your bot to auto like status",
+      "value": "yes",
+      "required": false 
     },
     "OWNER_NAME": {
       "description": "Owner name",
@@ -106,21 +110,26 @@
     },
    "ANTIDELETE_RECOVER_CONVENTION": {
       "description": "Enable anti-delete deleted to recover in conversation (yes/no)",
-      "value": "yes",
+      "value": "no",
       "required": false
     },	  
-    "GROUPANTILINK_REMOVE": {
+    "GROUPANTILINK": {
       "description": "Enable anti-link in groups (yes/no)",
       "value": "yes",
       "required": false
     },
-   "GROUPANTILINK_DELETE_ONLY": {
-      "description": "Enable anti-link in groups (yes/no)",
-      "value": "no",
-      "required": false
-    },	  
     "CHATBOT": {
       "description": "Enable text chatbot (yes/no)",
+      "value": "no",
+      "required": false
+    },
+    "WELCOME_MESSAGE": {
+      "description": "Enable welcoming message in groups (yes/no)",
+      "value": "no",
+      "required": false
+    },
+    "GOODBYE_MESSAGE": {
+      "description": "Enable  goodbye in groups (yes/no)",
       "value": "no",
       "required": false
     },
